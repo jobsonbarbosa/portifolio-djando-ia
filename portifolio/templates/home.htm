@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifolio</title>
+</head>
+<body>
+    <section>
+        <h1>Sobre mim</h1>
+        <p>Olá, meu nome é Jobson Barbosa, sou desenvolvedor de Python e Inteligencia Artificial.</p>
+    </section>
+    <section>
+        <h2>Habilitadade</h2>
+        <ul>
+            {% for chave, dados in habilidades.items %}
+                <li>{{dados.nome}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Contatos</h2>
+        <p>Email: jobsonbarbosa86@gmail.com</p>
+        <p>LinkedIn: @jobsonbarbosa</p>
+    </section>
+</body>
+</html>
